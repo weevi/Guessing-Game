@@ -1,33 +1,60 @@
-.App {
+@font-face {
+  font-family: 'Varela Round';
+  src: local('Varela Round'), url(./fonts/VarelaRound-Regular.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.main-wrap {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.322)), url(600528.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrap {
   text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(600528.png);
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.295);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+input {
+  display: block;
+  padding: 30px 40px;
+  margin:30px auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(22, 22, 22, 0.712);
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border: 0;
+  -webkit-box-shadow: 3px 3px 7px 4px rgb(46, 39, 56);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 7px 4px rgb(46, 39, 56);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 7px 4px rgb(46, 39, 56); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input:hover {
+  background-color: rgba(17, 17, 17, 0.438);
 }
 
-.App-link {
-  color: #61dafb;
+.img-wrap {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit {
+  background-color: rgba(66, 66, 66, 0.384);
+}
+
+.input {
+  background-color: rgba(66, 66, 66, 0.384);
 }
