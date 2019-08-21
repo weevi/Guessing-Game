@@ -1,17 +1,21 @@
 import React from 'react'
+import './App.css';
 
 class Result extends React.Component {
     
     render(){
-        const {champName, value, isPressed} = this.props;
-        if (isPressed){
-            if(champName === value){
+        if (this.props.parentTextBoxValue !== ''){
+            if(this.props.nameToCompare === this.props.parentTextBoxValue){
                 return (
-                    <h3>Correct! Roll Another Champion!</h3>
+                    <div className="answer-wrap" >
+                         <h3 className="answer">CORRECT! ROLL ANOTHER CHAMPION!</h3>
+                    </div>
                 )
             } else {
                 return (
-                    <h3>Try Again!</h3>
+                    <div className="answer-wrap">
+                         <h3 className="answer">TRY AGAIN!</h3>
+                    </div>
                 )
             }
         } else {
