@@ -21,7 +21,7 @@ this.setState({TextBoxValue: e.target.value})
     return (
       <div>
         <input  className="input" type="text" name="TextBox"  onChange={this.onChange}/>
-        <button  className="submit" onClick={this.SubmitValue}>Submit Value</button>
+        <button  className="submit" onClick={this.SubmitValue}>Enter</button>
       </div>
     );
   }
