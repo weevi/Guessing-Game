@@ -36,10 +36,10 @@ class App extends React.Component {
               <div className="wrap2">
 
                  <input className = "submit" type="submit" value="Roll a Champ" onClick={(e) => this.getArray(e)}/>
-                
                  <div className="img-wrap">
                     <img src={this.state.champIcon}/>
                  </div>
+                 <h3>Start with a capital letter</h3>
                   <SubmitResult  handleData={this.handleParentData} />
                   <Result parentTextBoxValue={this.state.parentTextBoxValue} nameToCompare = {this.state.champName} />
 

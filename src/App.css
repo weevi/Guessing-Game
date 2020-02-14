@@ -31,7 +31,7 @@ input, button {
   display: block;
   padding: 30px 40px;
   margin:30px auto;
-  text-transform: uppercase;
+
   letter-spacing: 1px;
   color: rgba(22, 22, 22, 0.712);
   font-weight: bold;
@@ -61,7 +61,7 @@ input:hover {
 
 .answer {
   color: rgb(218, 218, 218);
-  text-shadow: 5px 5px 9px 9px rgb(46, 39, 56);;
+  text-shadow: 5px 5px 9px 9px rgb(46, 39, 56);
 }
 
 .answer-wrap{
@@ -85,4 +85,27 @@ transform: translate(-50%, -50%);
   padding: 5px;
   font-size: 0.7em;
   font-weight: bold
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.74);
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.6px;
+  text-shadow: 5px 5px 9px 9px rgb(46, 39, 56);
+}
+
+@media screen and (max-width: 550px) {
+  input, button {
+    padding: 20px 30px;
+    margin:30px auto;
+    font-size: 0.8em;
+  }
+
+  .answer-wrap{
+    background-color: rgba(17, 17, 17, 0.438);
+    padding: 1px;
+    font-size: 0.8em;
+  }
+
 }
