@@ -20,7 +20,7 @@ this.setState({TextBoxValue: e.target.value})
   render() {
     return (
       <div>
-        <input  className="input" type="text" name="TextBox"  onChange={this.onChange}/>
+        <input  className="input guess" type="text" name="TextBox"  onChange={this.onChange}/>
         <button  className="submit" onClick={this.SubmitValue}>Enter</button>
       </div>
     );

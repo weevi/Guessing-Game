@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;;
+  font-family: 'Raleway', sans-serif;
 }
 
 .main-wrap {
@@ -30,12 +30,13 @@ body {
 }
 
 input, button {
+  font-family: 'Raleway', sans-serif;
   display: block;
-  padding: 20px 30px;
+  padding: 18px 25px;
   margin:20px auto;
-  letter-spacing: 0.7px;
-   color: rgba(85, 31, 73, 0.986);  font-weight: bold;
-  font-size: 1em;
+  color:rgba(255, 255, 255, 0.548);
+  font-weight: bold;
+  font-size: 1.2em;
   text-align: center;
   text-transform: uppercase;
   border: 0;
@@ -44,8 +45,20 @@ input, button {
   box-shadow:         3px 3px 7px 4px rgb(46, 39, 56); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
-input:hover {
-  background-color: rgba(17, 17, 17, 0.438);
+ input:hover {
+  transition: all 0.4s;
+  color: rgba(253, 253, 253, 0.986);
+}
+
+.submit:hover {
+  transition: all 0.4s;
+  background-color: rgb(104, 4, 62);
+  color: rgba(224, 171, 220, 0.986);
+}
+
+.guess {
+  padding: 10px 20px;
+  text-transform: none;
 }
 
 .img-wrap {
@@ -53,11 +66,14 @@ input:hover {
 }
 
 .submit {
-  background-color: rgba(184, 145, 229, 0.233);
+  background-color:rgb(163, 14, 64);
+  opacity: 0.8;
+  letter-spacing: 2px;
 }
 
 .input {
   background-color: rgba(66, 66, 66, 0.384);
+  letter-spacing: 1px;
 }
 
 .answer {
@@ -72,7 +88,7 @@ input:hover {
 }
 
 .title {
-  padding: 40px 20px;
+  padding: 0px 20px 0px 20px;
   font-size:2em;
   font-family: 'Raleway', serif;
   font-weight: 900;
@@ -110,18 +126,23 @@ transform: translate(-50%, -50%);
 }
 
 h4 {
-  color: rgba(65, 24, 119, 0.74);
-  text-transform: uppercase;
+  color: rgba(188, 182, 190, 0.74);
   font-size: 0.7em;
   letter-spacing: 0.6px;
   font-weight: bold;
+  padding-top: 0;
 }
 
 @media screen and (max-width: 550px) {
   input, button {
-    padding: 20px 30px;
-    margin:30px auto;
+    padding: 15px 20px;
+    margin:20px auto;
     font-size: 0.8em;
+  }
+
+  .title {
+    font-size: 1em;
+    line-height: 25px;
   }
 
   .answer-wrap{

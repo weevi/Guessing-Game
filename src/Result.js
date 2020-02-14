@@ -15,6 +15,7 @@ class Result extends React.Component {
                 return (
                     <div className="answer-wrap">
                          <h3 className="answer">TRY AGAIN!</h3>
+                         <h4>Start with a capital letter</h4>
                     </div>
                 )
             }

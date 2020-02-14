@@ -35,13 +35,12 @@ class App extends React.Component {
             <div className="wrap">
               <div className="wrap2">
               <div className="title-wrap" >
-              <div class="title"><span>Guess what League of Legends champion this is!</span></div>
+              <div className="title"><span>Guess what League of Legends champion this is!</span></div>
                     </div>
                  <input className = "submit" type="submit" value="Roll" onClick={(e) => this.getArray(e)}/>
                  <div className="img-wrap">
                     <img src={this.state.champIcon}/>
                  </div>
-                 <h4>Start with a capital letter:</h4>
                   <SubmitResult  handleData={this.handleParentData} />
                   <Result parentTextBoxValue={this.state.parentTextBoxValue} nameToCompare = {this.state.champName} />
 
